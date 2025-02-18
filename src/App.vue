@@ -14,9 +14,9 @@
       };
     },
     created(){
-      axios.get('https://jsonplaceholder.typicode.com/comments')
+      axios.get('https://jsonplaceholder.typicode.com/posts')
       .then((Response) => {
-        this.store.contacts = Response.data.slice(0,100);
+        this.store.contacts = Response.data;
         console.log(this.store.contacts);
       })
       .catch((error) => {

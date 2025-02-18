@@ -1,16 +1,14 @@
+import { defineStore } from 'pinia';
 
-import { defineStore } from 'pinia'
-
-const useCounterStore = defineStore('counter', {
-  state: () => ({
+const CounterStore = defineStore('data', {
+    state: () => ({
+        inChat: false,
+        openedChatId: -1,
+    }),
+    actions: {
+        
+    },
     
-  }),
-  getters: {
+});
 
-  },
-  actions: {
-
-  },
-})
-
-export default useCounterStore;
+export default CounterStore;
