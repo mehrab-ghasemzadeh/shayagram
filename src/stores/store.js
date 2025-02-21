@@ -8,7 +8,6 @@ const CounterStore = defineStore('data', {
     actions: {
         
     },
-    
 });
 
 export default CounterStore;

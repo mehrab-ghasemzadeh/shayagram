@@ -17,7 +17,7 @@
       axios.get('https://jsonplaceholder.typicode.com/posts')
       .then((Response) => {
         this.store.contacts = Response.data;
-        console.log(this.store.contacts);
+        // console.log(this.store.contacts);  
       })
       .catch((error) => {
         console.error(error);
